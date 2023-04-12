@@ -1,7 +1,7 @@
 # Knights-Travails
 Knight's Travails exercise from TOP Ruby course
 
-In this exercise, I built a function called knight_moves that shows the shortest possible route for a knight to get from one square to another on a chess board. The function outputs every square the knight stops at on its path.
+In this exercise, I built a function called knight_moves that shows the shortest possible route for a knight to get from one square to another on a chess board. The function outputs every square the knight stops at on its path. The function uses a breadth-first search algorithm.
 
 I used a two-queue system to keep track of how many moves the knight makes. This was a tip I found somewhere on the internet. The next_queue array holds all the potential moves that can be made from the current square. On the next move or turn, after all moves in the current queue have been explored, next_queue becomes the main queue, and next_queue is cleared. All the potential moves from the last turn become the current moves being evaluated, and their potential next moves are placed in next_queue. The move count is incremented every time the queues are switched.
 
